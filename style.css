@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/pikachu.jpg);
+    color: white;
+    background-position: 50% -8%;
+
+}
+span{
+    color: red;
+}
+#container{
+    max-width: 1240px;
+    height: 1036px;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    margin-top: 30px;
+}
+#title{
+    text-align: center;
+    font-size: 3.1 rem;
+    font-family: 'Permanent Marker', cursive;
+    font-variant: small-caps;
+    display: block;
+    font-weight: bold;
+}
+#survey-form-container{
+    width: 500px;
+    background-color: rgba(0,0,0,0.8);
+    margin: auto;
+    padding: 30px 40px;
+}
+.input-box{
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+#name,
+#surname,
+#mail,
+#role,
+#options,
+#textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+#form-button{
+    width: 160px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+   }
+.submit-form{
+    margin: auto;
+    width: 160px;
+    margin-top: 10px;
+}
+
+#form-button:hover{
+    background-color: white;
+    color: red;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clarusway Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <hr />
+      <header id="title">
+        <h1>Clarusway Survey Form</h1>
+        <h3>Thank you for taking the time to help us improve the platform</h3>
+      </header>
+      <section id="survey-form-container">
+        <form action="result.html" method="get">
+          <div class="input-box">
+            <label for="name"> Name <span>*</span> </label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="surname">Surname<span>*</span></label>
+            <br />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Enter your Surname"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label for="mail">Email</label>
+            <br />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="user@clarusway.com"
+            />
+          </div>
+          <div class="input-box">
+            <label for="role"
+              >Which option best describes your current role?</label
+            >
+            <br />
+            <select name="option" id="role">
+              <option value="none" selected>Select current role</option>
+              <option value="inspector">Inspector</option>
+              <option value="mentor">Mentor</option>
+              <option value="student">Student</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="options"
+              >Would you recommend Clarusway to a friend?</label
+            >
+            <br />
+            <input
+              type="radio"
+              id="yes"
+              name="recommend"
+              value="Definitely, Yes"
+              checked
+            />
+            <label for="yes">Definitely, Yes</label>
+            <br />
+            <input type="radio" id="maybe" name="recommend" value="Maybe" />
+            <label for="maybe">Maybe</label>
+            <br />
+            <input type="radio" id="Not" name="recommend" value="Not Sure" />
+            <label for="Not">Not sure</label>
+            <br />
+            <input
+              type="radio"
+              id="No"
+              name="recommend"
+              value="Definitely, No"
+            />
+            <label for="No">Definitely, No</label>
+          </div>
+          <div class="input-box">
+            <label for="feature"
+              >What is your favorite feature of Clarusway?</label
+            >
+            <br />
+            <select name="option" id="role">
+              <option value="none" selected>Select an option</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JS">Java Script</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="checkbox"
+              >What would you like to see improved?(Check all that apply)</label
+            >
+            <br />
+            <input
+              type="checkbox"
+              name="I would like to see improved"
+              id="front"
+              value="Front-end"
+            />
+            <label for="front">Front-end Projects</label>
+            <br />
+            <input
+              type="checkbox"
+              name="I would like to see improved"
+              id="Back-end"
+              value="Back-end"
+            />
+            <label for="Back-end">Back-end Projects</label>
+            <br />
+            <input
+              type="checkbox"
+              name="I would like to see improved"
+              id="Data"
+              value="Data Science"
+            />
+            <label for="Data">Data Science</label>
+            <br />
+            <input
+              type="checkbox"
+              name="I would like to see improved"
+              id="Additional"
+              value="Additional Courses"
+            />
+
+            <label for="Additional">Additional Courses</label>
+          </div>
+          <div class="input-box">
+            <label for="textarea">Any comments or suggestions?</label>
+            <br />
+            <textarea
+              name="suggestions"
+              id="textarea"
+              cols="20"
+              rows="2"
+              placeholder="Enter your comment here... Thanks for your application."
+            ></textarea>
+          </div>
+          <div class="submit-form">
+            <input type="submit" id="form-button" value="Submit" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
